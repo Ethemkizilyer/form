@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .hrv {
+        display: inline-block;
+        width: 120px;
+      }
+      span {
+        margin-left: 50px;
+        font-weight: bold;
+      }
+      .item {
+        width: 200px;
+      }
+      #yorum {
+        resize: none;
+        width: 250px;
+        height: 75px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi</h1>
+    <form action="index1.html" method="get">
+      <fieldset>
+        <legend>Sözleşme Onay</legend>
+        <input type="checkbox" name="Sözleşme" id="bir" />
+        <label for="bir"
+          >Aşağıdaki Bilgilerin doğruluğnu kabul ediyorum ve sözleşmesini
+          onaylıyorum.</label
+        ><br />
+        <input type="submit" value="Formu Kaydet" name="Kaydet" />
+        <input type="reset" value="Formu Temizle" name="Kaydetme" />
+      </fieldset>
+      <fieldset>
+        <legend>Kişisel Bilgiler</legend>
+        <label class="hrv" for="id">Form Güvenlik ID</label>
+        <input
+          type="text"
+          accept="circle"
+          name="Id no"
+          id="id"
+          placeholder="dsfws"
+        /><br />
+        <label class="hrv" for="fname">Ad</label>
+        <input type="text" name="Ad" id="fname" /><br />
+        <label class="hrv" for="lname">Soyad</label>
+        <input type="text" name="Soyad" id="lname" /><br />
+        <label class="hrv" for="age">Yaş</label>
+        <input type="number" name="Yaş" id="age" /><br />
+        <label class="hrv" for="mail">Mail Adresi</label>
+        <input type="email" name="Email" id="mail" /><br />
+        <label class="hrv" for="foto">Fotoğraf Ekle</label>
+        <input type="file" name="Dosya" id="foto" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Diğer Bilgiler</legend>
+        <span>Buradaki alanlar Mesleki Deneyi Kapsar</span>
+        <table>
+          <tr>
+            <td class="item">Sektör Deneyimi</td>
+            <td><input type="date" id="date" name="Giriş_Tarihi" /><br /></td>
+          </tr>
+
+          <tr>
+            <td class="item">Sektör Deneyimi</td>
+            <td>
+              <input type="radio" id="süre" name="zaman" />
+              <label for="süre">1-5 yıl</label><br />
+              <input type="radio" id="süre" name="zaman" />
+              <label for="süre">6-10 yıl</label><br />
+              <input type="radio" id="süre" name="zaman" />
+              <label for="süre">11-15 yıl</label><br />
+              <input type="radio" id="süre" name="zaman" />
+              <label for="süre">15-üzeri</label>
+            </td>
+          </tr>
+
+          <br />
+          <tr>
+            <td>Programlama Dili</td>
+            <td>
+              <select name="Seçilen Tatlı" id="seker" multiple>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="Java">Java</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="Linux">Linux</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Sözleşme Kopyası</legend>
+        <textarea name="" id="yorum" value="lorem">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed nobis corrupti nisi et excepturi dolore, reiciendis, cupiditate modi quidem natus odio aliquam distinctio earum quaerat molestiae ut? Facilis, tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vero hic iure consequuntur, doloribus recusandae mollitia, necessitatibus voluptates suscipit, placeat temporibus sequi voluptate facilis adipisci. Minus at inventore ab nam.</textarea
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Mail Listesi</legend>
+        <label for="">Mail Listesine Kayılmak <b>İstiyorum</b></label
+        ><input type="radio" name="mail" checked /> <br />
+        <label for=""
+          >Mail Listesine Kayılmak <b><u>İstemiyorum</u></b> </label
+        ><input type="radio" name="mail" custom />
+      </fieldset>
+    </form>
+  </body>
+</html>
